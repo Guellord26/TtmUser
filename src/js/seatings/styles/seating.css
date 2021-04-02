@@ -1,0 +1,87 @@
+*{
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box ;
+}
+.input-g{
+    margin: 0.3rem 1rem ;
+    padding: 0.7rem t;
+    display: flex ;
+    justify-content: space-between ;
+    -webkit-box-shadow:  0px 0px 3px 1px rgba(181,181,181,0.95) ;
+    -moz-box-shadow:  0px 0px 3px 1px rgba(181,181,181,0.95);
+    box-shadow:  0px 0px 3px 1px rgba(181,181,181,0.95);
+}
+.seating-legend{
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    text-align: center ;
+}
+.seating-legend .title,.seating-legend .content{
+    margin-bottom: 10px !important;
+}
+.cabine{
+    background-color: #f3efef;
+    padding: 10px;
+    margin: 10px;
+    border-spacing: 15px 5px;
+}
+.LineSiege{
+    margin-bottom: 15px;
+}
+.space{
+    height: 80px ;
+    width: 80px;
+    background-color: #ff8b8b ;
+    margin: 1px ;
+    border-radius: 16px 16px 0px 0px ;
+    position: relative ;
+
+}
+.seats{
+    height: 80px ;
+    width: 80px ;
+    background-color: #fff ;
+    margin: 10px;
+    border-radius: 5px 5px 0px 0px ;
+    border: 2px solid #4a4949;
+    border-bottom: 6px solid #4a4949 ;
+    transition: all 0.3s;
+    position: relative ;
+    cursor: pointer;
+    
+}
+.seats:hover{
+    transform: scale(1.05);
+    -webkit-box-shadow:  0px 0px 3px 1px rgba(181,181,181,0.95) ;
+    -moz-box-shadow:  0px 0px 3px 1px rgba(181,181,181,0.95);
+    box-shadow:  0px 0px 3px 1px rgba(181,181,181,0.95) ;
+}
+
+.seats.prise{
+    cursor: not-allowed ;
+    background-color: #8d8d8d ;
+}
+
+.seats.choice{
+    background-color: #8df15e;
+}
+
+
+.coudeleft{
+    position: absolute ;
+    left: -7px;
+    bottom: -6px ;
+    background-color: #4a4949;
+    height: 25px;
+    width: 6px ;
+}
+.couderight{
+    position: absolute;
+    right:  -7px ;
+    bottom: -6px;
+    background-color: #4a4949;
+    height: 25px;
+    width: 6px;
+}
